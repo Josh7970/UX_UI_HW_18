@@ -6,26 +6,184 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-
+    <script src="https://kit.fontawesome.com/fc99cff999.js" crossorigin="anonymous"></script>
 </head>
+<!-- Header Section -->
 <body>
 <div id="header">
     <div class="container">
         <nav>
-            <img src="images/logo.png" class="logo">
+            <img src="images/logo2.png" class="logo">
             <ul>
                 <li><a href="#">Work</a></li>
                 <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="#">Work</a></li>
             </ul>
         </nav>
+        <div class="headerText">
+            <h1>Hello, I'm <span>Joshua Seeley</span></h1>
+            <p>UI/UX Designer<br>Design that connects, research that informs</p>
+            <button class="btn readMore">READ MORE</button>
+            <button class="btn resume">RESUME</button>
+        </div>  
+    </div>
+</div>
+
+<!-- About me section -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="aboutCol1">
+                <img src="images/profile.jpg">
+            </div>
+            <div class="aboutCol2">
+                <h1 class="subTitle">About Me</h1>
+                <p class="description">My passion for creating intuitive and user-centered designs began while studying Information systems in college. 
+                    It was then that I discovered the similarities between design and analytics, and the
+                    importance of organization and visual appeal in creating a positive user experience. 
+                    However, it was while traveling across Southeast Asia that I truly understood the 
+                    correlation between design and the emotions it evokes. I saw firsthand how a person's
+                    experience can be greatly impacted by the interactions they have with their environment.
+                    This realization only solidified my belief that a good design should be meaningful, 
+                    purposeful, and memorable to truly benefit users. Without this understanding, design 
+                    is nothing more than a problem-creating tool. My goal as a designer is to create 
+                    experiences that not only look good, but also solve real problems for users
+                </p>
+    
+                <div class="tabTitles">
+                    <p class="tabLinks activeLink" onclick="opentab('experience')">Experience</p>
+                    <p class="tabLinks" onclick="opentab('education')">Education</p>
+                    <p class="tabLinks" onclick="opentab('hobbies')">Hobbies</p>
+                </div>
+                <div class="tabContents activeTab" id="experience">
+                    <ul>
+                        <li><span>U of U UI/UX Boot Camp</span><br>Learned how to conduct user research and design web/app interfaces</li>
+                    </ul>
+                </div>
+                <div class="tabContents" id="education">
+                    <ul>
+                        <li><span>University of Utah</span><br>Bachelors Degree in Information Systems</li>
+                        <li><span>Universiyt of Utah Bootcamps</span><br>UI/UX Bootcamp Certification</li>
+                    </ul>
+                </div>
+                <div class="tabContents" id="hobbies">
+                    <ul>
+                        <li><span>Basketball</span><br>I enjoy watching basketball and playing occasional pick up.</li>
+                        <li><span>Traveling</span><br>I enjoy traveling around the world and experiencing all kinds of foods and cultures.</li>
+                        <li><span>Painting</span><br>Once and a while i'll pick up a paint brush</li>
+                        <li><span>Gaming</span><br>I enjoy gaming with friends</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ----------------MY Skills Section----------------- -->
+
+<div id="mySkills">
+    <div class="container">
+        <h1 class="subTitle">My UX Skills</h1>
+        <div class="skillsList">
+            <div>
+                <img src="images/UserResearch.png" class="userResearch">
+                <h3>User Research</h3>
+                <p>The purpose of user research is to put design into context. Therefore, using user research
+                    is important when trying to learn what end users of a system or product want or need. I enjoy
+                    interviewing and talking with clients to gather imporatant data. Insights help improve and develop
+                    purpose for any design.
+                </p> 
+            </div>
+            <div>
+                <img src="images/UserInterfaceDesign.png" class="interFace">
+                <h3>User Interface Design</h3>
+                <p>I possess skills that make interfaces visually pleasing and accessible for users. I understand the importance
+                    of user testing as well because it helps improve systems or designs for the better.
+                </p>
+            </div>
+            <div>
+                <img src="images/WebDevelopment.png" class="web">
+                <h3>Web Development</h3>
+                <p>I am able to understand web development language such as HTML, CSS, Javascript, and more. Being able to communicate with
+                    developers as a designers is important especially when u want to relay certain design information. 
+                </p>
+            </div>
+        </div>
     </div>
 
 </div>
 
+<!-- --------------My Work Section--------- -->
+<div id="myWork">
+    <div class="container">
+        <h1 class="subTitle">My Work</h1>
+        <div class="workList">
+            <div class="work">
+                <img src="images/Pistachio.png">
+                <div class="layer">
+                    <h3>Pistachio Social App</h3>
+                    <p>This app connects young dads who are looking for communities for them and their children to socialize with.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/KnowItAll.png">
+                <div class="layer">
+                    <h3>KnowItAll Travel App</h3>
+                    <p>This app aids travelers who are looking to avoid tourist traps and enjoy local culture.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/DHS.png">
+                <div class="layer">
+                    <h3>DHS Website Redesign</h3>
+                    <p>Redsign of Homeland Securities website by making it easier to use and navigate for users.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btnWork">See More</a>
+    </div>
+</div>
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- -------I need to put this in a javascript file instead of doing it directly on HTML--------- -->
+<script>
+
+    var tabLinks = document.getElementsByClassName("tabLinks");
+    var tabContents = document.getElementsByClassName("tabContents");
+    function opentab(tabname){
+        for(tabLink of tabLinks){
+            tabLink.classList.remove("activeLink");
+        }
+        for(tabContent of tabContents){
+            tabContent.classList.remove("activeTab");
+        }
+        event.currentTarget.classList.add("activeLink");
+        document.getElementById(tabname).classList.add("activeTab");
+    }
+
+</script>
+
+
 </body>
 </html>
